@@ -6,16 +6,16 @@
 </head>
 <body>
 {% if user.is_staff %}
-    <form action="/vacancy/new" method="post">{% csrf_token %}
-        <label for="description">description: </label>
-        <input id="description" type="text" name="description"><br><br>
-        <input type="submit" value="Create"><br><br>
+    <form action="/vacancy/new" method="post"> {% csrf_token %}
+        <p>description:</p>
+        <p><input type="text" name="description"></p>
+        <p><input type="submit" value="Create"></p>
     </form>
 {% else %}
-    <form action="/resume/new" method="post">{% csrf_token %}
-        <label for="description">description: </label>
-        <input id="description" type="text" name="description"><br><br>
-        <input type="submit" value="Create"><br><br>
+    <form action="/resume/new" method="post"> {% csrf_token %}
+        <p>description:</p>
+        <p><input id="description" type="text" name="description"></p>
+        <p><input type="submit" value="Create"></p>
     </form>
 {% endif %}
 </body>
