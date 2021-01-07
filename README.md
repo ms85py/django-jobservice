@@ -17,10 +17,8 @@ Every Vacancy/Resume is saved and loaded from a Database via Models.
 
 Noteworthy: Only users with admin/staff-access can add vacancies, and only normal users can add resumes.
 
-Vacancies/resumes are added by Forms with validation and a post-request, after checking users access.
+Vacancies/resumes are added by forms with validation and a post-request, after checking users access.
 
 This was my, for now, most involved project with Django, as it uses almost everything I've learned in the previous two projects and more.
-
-I've used class-based views, models, forms, validation, quite a bit of DTL.
 
 **Libraries/Modules used:** None.
